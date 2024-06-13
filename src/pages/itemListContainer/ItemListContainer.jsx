@@ -1,9 +1,5 @@
-import "./itemlistcontainer.css";
+const ItemListContainer = ({ greeting }) => {
+  return <h1>{greeting}</h1>;
+};
 
-const ItemListContainer = ( {greeting} ) => {
-  return (
-    <h1>{greeting}</h1>
-  );
-}
-
-export default ItemListContainer
+export default ItemListContainer;

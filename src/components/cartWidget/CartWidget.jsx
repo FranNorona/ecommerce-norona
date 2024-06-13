@@ -3,9 +3,9 @@ import { FaShoppingCart } from "react-icons/fa";
 const CartWidget = () => {
   return (
     <div>
-        <FaShoppingCart size={(25)} />
+      <FaShoppingCart size={35} />
     </div>
-  )
-}
+  );
+};
 
-export default CartWidget
+export default CartWidget;
