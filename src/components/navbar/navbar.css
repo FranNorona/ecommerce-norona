@@ -5,7 +5,9 @@
   padding: 10px;
   width: 100vw;
   min-height: 10vw;
+  color: white;
   box-shadow: 1px 1px 5px 0.4px grey;
+  background: #ffafcc;
 }
 
 .logoImg {
@@ -22,7 +24,7 @@
 }
 
 .listContainer {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
   width: 45%;
@@ -37,5 +39,5 @@
 
 .listContainer ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
