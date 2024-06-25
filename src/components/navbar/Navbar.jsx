@@ -1,31 +1,36 @@
+import { Grid } from "@mui/material";
 import CartWidget from "../cartWidget/CartWidget";
 import "./navbar.css";
 
 const Navbar = () => {
   return (
-    <div className="navbarContainer">
-      <div className="logoImg">
-        <img
-          src="https://res.cloudinary.com/dmhprmqnk/image/upload/v1718284613/logoinherit_gos5nh.png"
+    <div>
+      <Grid container className="navbarContainer">
+        <Grid className="logoImg" item xs="1">
+          <img src="https://res.cloudinary.com/dmhprmqnk/image/upload/v1718284613/logoinherit_gos5nh.png"
           alt="logo"
-        />
-      </div>
+          />
+        </Grid>
 
-      <div className="listContainer">
-        <ul>
-          <li>
-            <a href="#">Vasos</a>
-          </li>
-          <li>
-            <a href="#">Botellas</a>
-          </li>
-          <li>
-            <a href="#">Deco</a>
-          </li>
-        </ul>
-      </div>
+        <Grid className="listContainer" item xs="6">
+          <ul>
+            <li>
+              <a href="#">Vasos</a>
+            </li>
+            <li>
+              <a href="#">Botellas</a>
+            </li>
+            <li>
+              <a href="#">Deco</a>
+            </li>
+          </ul>
+        </Grid>
 
-      <CartWidget />
+        <Grid item xs="1">
+          <CartWidget />
+        </Grid>
+
+      </Grid>
     </div>
   );
 };
