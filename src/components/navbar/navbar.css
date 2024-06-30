@@ -4,7 +4,7 @@
   align-items: center;
   padding: 10px;
   width: 100vw;
-  min-height: 10vw;
+  min-height: 10vh;
   color: white;
   box-shadow: 1px 1px 5px 0.4px grey;
   background: #ffafcc;
@@ -19,15 +19,16 @@
 }
 
 .logoImg img {
-  width: 135px;
-  height: 150px;
+  width: 150px;
+  height: 100%;
+  margin-left: 15px;
 }
 
 .listContainer {
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
-  width: 45%;
+  width: 50%;
 }
 
 .listContainer ul {

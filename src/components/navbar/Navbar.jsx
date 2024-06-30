@@ -6,30 +6,30 @@ const Navbar = () => {
   return (
     <div>
       <Grid container className="navbarContainer">
-        <Grid className="logoImg" item xs="1">
-          <img src="https://res.cloudinary.com/dmhprmqnk/image/upload/v1718284613/logoinherit_gos5nh.png"
-          alt="logo"
+        <Grid className="logoImg" item xs="1" md="0">
+          <img
+            src="https://res.cloudinary.com/dmhprmqnk/image/upload/v1718284613/logoinherit_gos5nh.png"
+            alt="logo"
           />
         </Grid>
 
-        <Grid className="listContainer" item xs="6">
+        <Grid className="listContainer" item xs="8">
           <ul>
             <li>
-              <a href="#">Vasos</a>
+              <a href="#">Todos</a>
             </li>
             <li>
               <a href="#">Botellas</a>
             </li>
             <li>
-              <a href="#">Deco</a>
+              <a href="#">Vasos</a>
             </li>
           </ul>
         </Grid>
 
-        <Grid item xs="1">
+        <Grid item xs="0">
           <CartWidget />
         </Grid>
-
       </Grid>
     </div>
   );

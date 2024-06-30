@@ -1,0 +1,77 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+  margin-top: 10px;
+  width: 250px;
+  height: 400px;
+  cursor: pointer;
+  transition: all 120ms;
+  overflow: hidden;
+  border-top: 1px solid #cdb4db;
+  border-right: 2px solid #cdb4db;
+  border-bottom: 3px solid #cdb4db;
+  border-left: 2px solid #cdb4db;
+  border-radius: 10px;
+  background: #f9f1fd;
+}
+
+.cardContainer::after {
+  content: "Ver Mas";
+  position: absolute;
+  padding-top: 1.25em;
+  left: 0;
+  bottom: -60px;
+  width: 100%;
+  height: 2.5em;
+  transition: all 80ms;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: #cdb4db;
+}
+
+.cardContainer:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+.cardContainer:active {
+  transform: scale(0.92);
+}
+
+.cardContainer img {
+  align-self: center;
+  width: 200px;
+  height: 50%;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px 1px rgba(94, 89, 89, 0.9);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(94, 89, 89, 0.9);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(94, 89, 89, 0.9);
+}
+
+.cardTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 5px;
+  height: 50%;
+}
+
+.cardTitle h2 {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cardTitle h3 {
+  height: 50%;
+  font-weight: 400;
+  text-align: center;
+}

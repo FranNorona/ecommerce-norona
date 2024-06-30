@@ -1,11 +1,12 @@
-import { FaShoppingCart } from "react-icons/fa";
+import Badge from "@mui/material/Badge";
+import MailIcon from "@mui/icons-material/Mail";
 
-const CartWidget = () => {
+function CartWidget() {
   return (
-    <div>
-      <FaShoppingCart size={35} />
-    </div>
+    <Badge badgeContent={4} color="primary">
+      <MailIcon color="action" />
+    </Badge>
   );
-};
+}
 
 export default CartWidget;

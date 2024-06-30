@@ -3,30 +3,29 @@ import { products } from "../../products";
 import { useState, useEffect } from "react";
 
 const ItemListContainer = () => {
-
   const [items, setItems] = useState([]);
   const [error, setError] = useState({});
 
-  useEffect(()=> {
+  useEffect(() => {
     const getProducts = new Promise((resolve, reject) => {
       let x = true;
       if (x) {
         resolve(products);
       } else {
-        reject({message: "error", codigo: "404"});
+        reject({ message: "error", codigo: "404" });
       }
     });
 
     getProducts
-      .then((res)=> {
+      .then((res) => {
         setItems(res);
       })
-      .catch((error)=> {
+      .catch((error) => {
         setError(error);
       });
   }, []);
 
-  return <ItemList items={items} />
+  return <ItemList items={items} />;
 };
 
 export default ItemListContainer;
