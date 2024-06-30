@@ -38,7 +38,7 @@
   list-style: none;
 }
 
-.listContainer ul li a {
+.listContainer_links {
   text-decoration: none;
   color: white;
 }

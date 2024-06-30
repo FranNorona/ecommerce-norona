@@ -19,15 +19,15 @@ const Navbar = () => {
 
         <Grid className="listContainer" item xs="8">
           <ul>
-            <li>
-              <a href="#">Todos</a>
-            </li>
-            <li>
-              <a href="#">Botellas</a>
-            </li>
-            <li>
-              <a href="#">Vasos</a>
-            </li>
+            <Link to="/" className="listContainer_links">
+              Todas
+            </Link>
+            <Link to="/category/botellas" className="listContainer_links">
+              Botellas
+            </Link>
+            <Link to="/category/vasos" className="listContainer_links">
+              Vasos
+            </Link>
           </ul>
         </Grid>
 

@@ -1,7 +1,13 @@
-const ItemDetail = () => {
-  return (
-    <div>ItemDetail</div>
-  )
-}
+import Navbar from "../../components/navbar/Navbar";
 
-export default ItemDetail
+const ItemDetail = ({ item }) => {
+  return (
+    <>
+      <div>
+        <h2>{item.title}</h2>
+      </div>
+    </>
+  );
+};
+
+export default ItemDetail;

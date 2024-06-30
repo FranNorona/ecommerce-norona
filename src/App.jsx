@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar.jsx";
 import ItemListContainer from "./pages/itemListContainer/ItemListContainer.jsx";
+import ItemDetailContainer from "./pages/itemDetailContainer/ItemDetailContainer.jsx";
 import Cart from "./pages/cart/Cart.jsx";
 
 function App() {
@@ -9,8 +10,11 @@ function App() {
       <Routes>
         <Route element={<Navbar />}>
           <Route path="/" element={<ItemListContainer />} />
+          <Route path="/category/:name" element={<ItemListContainer />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/itemDetail/:id" element={<ItemDetailContainer />} />
         </Route>
+        <Route path="*" element={<h1>404 Not found</h1>} />
       </Routes>
     </BrowserRouter>
   );

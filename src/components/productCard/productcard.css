@@ -11,6 +11,7 @@
   cursor: pointer;
   transition: all 120ms;
   overflow: hidden;
+  text-decoration: none;
   border-top: 1px solid #cdb4db;
   border-right: 2px solid #cdb4db;
   border-bottom: 3px solid #cdb4db;
@@ -62,6 +63,7 @@
   align-items: center;
   padding-top: 5px;
   height: 50%;
+  color: black;
 }
 
 .cardTitle h2 {
