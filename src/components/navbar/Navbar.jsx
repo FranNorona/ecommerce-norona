@@ -1,5 +1,4 @@
 import { Grid } from "@mui/material";
-import { Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
 import CartWidget from "../cartWidget/CartWidget";
 import "./navbar.css";
@@ -35,7 +34,6 @@ const Navbar = () => {
           <CartWidget />
         </Grid>
       </Grid>
-      <Outlet />
     </div>
   );
 };
