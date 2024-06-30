@@ -15,6 +15,7 @@ const ItemList = ({ items }) => {
       {items.map((elemento) => {
         return (
           <ProductCard
+            id={elemento.id}
             key={elemento.id}
             image={elemento.img}
             title={elemento.title}

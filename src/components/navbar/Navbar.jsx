@@ -1,4 +1,6 @@
 import { Grid } from "@mui/material";
+import { Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import CartWidget from "../cartWidget/CartWidget";
 import "./navbar.css";
 
@@ -7,10 +9,12 @@ const Navbar = () => {
     <div>
       <Grid container className="navbarContainer">
         <Grid className="logoImg" item xs="1" md="0">
-          <img
-            src="https://res.cloudinary.com/dmhprmqnk/image/upload/v1718284613/logoinherit_gos5nh.png"
-            alt="logo"
-          />
+          <Link to="/">
+            <img
+              src="https://res.cloudinary.com/dmhprmqnk/image/upload/v1718284613/logoinherit_gos5nh.png"
+              alt="logo"
+            />
+          </Link>
         </Grid>
 
         <Grid className="listContainer" item xs="8">
@@ -31,6 +35,7 @@ const Navbar = () => {
           <CartWidget />
         </Grid>
       </Grid>
+      <Outlet />
     </div>
   );
 };

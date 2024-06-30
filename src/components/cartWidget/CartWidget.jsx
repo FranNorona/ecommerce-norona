@@ -1,11 +1,14 @@
 import Badge from "@mui/material/Badge";
-import MailIcon from "@mui/icons-material/Mail";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { Link } from "react-router-dom";
 
 function CartWidget() {
   return (
-    <Badge badgeContent={4} color="primary">
-      <MailIcon color="action" />
-    </Badge>
+    <Link to="/cart">
+      <Badge badgeContent={0} color="primary" showZero>
+        <ShoppingCartIcon color="white" />
+      </Badge>
+    </Link>
   );
 }
 

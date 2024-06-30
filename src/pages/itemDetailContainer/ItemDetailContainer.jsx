@@ -1,7 +1,5 @@
 const ItemDetailContainer = () => {
-  return (
-    <div>ItemDetailContainer</div>
-  )
-}
+  return <div>ItemDetailContainer</div>;
+};
 
-export default ItemDetailContainer
+export default ItemDetailContainer;
