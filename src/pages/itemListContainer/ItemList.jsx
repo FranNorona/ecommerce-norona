@@ -7,6 +7,8 @@ const ItemList = ({ items }) => {
         display: "flex",
         justifyContent: "space-evenly",
         flexWrap: "wrap",
+        minHeight: "70vh",
+        paddingBottom: "10px",
         marginTop: "2px",
         backgroundColor: "white",
       }}

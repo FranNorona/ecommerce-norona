@@ -1,6 +1,6 @@
 const Cart = () => {
   return (
-    <div>
+    <div style={{ minHeight: "70vh" }}>
       <h1>Aca va a estar el carrito</h1>
     </div>
   );
