@@ -17,14 +17,17 @@ const ItemDetail = ({ item }) => {
           <div className="titleAndDescript">
             <h1>{item.title}</h1>
             <div className="stars">
-              <img src="#" alt="#" />
+              <img
+                src="https://res.cloudinary.com/dmhprmqnk/image/upload/v1720132440/rating-24185_1280_bf8wml.png"
+                alt="starsrating"
+              />
             </div>
             <p>{item.description}</p>
           </div>
           <div className="buttonAndOfert">
-            <h2>OFERTA</h2>
+            <h2>OFERTA VALIDA HASTA 30/07</h2>
             <CounterContainer />
-            <button>Comprar</button>
+            <button className="buttonBuy">Comprar</button>
           </div>
         </div>
       </div>

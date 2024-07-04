@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div>
       <Grid container className="navbarContainer">
-        <Grid className="logoImg" item xs="1" md="0">
+        <Grid className="logoImg" item xs={1} md={0}>
           <Link to="/">
             <img
               src="https://res.cloudinary.com/dmhprmqnk/image/upload/v1718284613/logoinherit_gos5nh.png"
@@ -16,7 +16,7 @@ const Navbar = () => {
           </Link>
         </Grid>
 
-        <Grid className="listContainer" item xs="8">
+        <Grid className="listContainer" item xs={8}>
           <ul>
             <Link to="/" className="listContainer_links">
               Todas
@@ -30,7 +30,7 @@ const Navbar = () => {
           </ul>
         </Grid>
 
-        <Grid item xs="0">
+        <Grid item xs={0}>
           <CartWidget />
         </Grid>
       </Grid>

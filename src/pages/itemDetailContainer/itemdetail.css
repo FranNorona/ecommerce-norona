@@ -13,19 +13,31 @@
   align-items: flex-start;
   width: 48%;
   height: 600px;
-  border: 1px solid grey;
+  background: #f9f1fd;
+  border: 1px solid #cdb4db;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(7.3px);
+  -webkit-backdrop-filter: blur(7.3px);
+  overflow: hidden;
 }
 
 .imageSmallSize {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
   width: 15%;
   height: 100%;
-  border-right: 1px solid grey;
+  border-right: 1px solid #cdb4db;
 }
 
 .imageSmallSize img {
-  width: 100%;
-  height: 20%;
+  width: 80%;
+  height: 18%;
   object-fit: cover;
+  border: 2px solid #cdb4db;
+  border-radius: 16px;
   background-color: aqua;
 }
 
@@ -45,9 +57,14 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  width: 35%;
-  height: 100%;
-  border: 1px solid blue;
+  width: 25%;
+  height: 600px;
+  border: 1px solid #cdb4db;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(7.3px);
+  -webkit-backdrop-filter: blur(7.3px);
+  background: #f9f1fd;
 }
 
 .titleAndDescript {
@@ -55,47 +72,59 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  padding: 10px;
   width: 100%;
   height: 80%;
-  border: 1px solid red;
 }
 
 .titleAndDescript h1 {
   width: 100%;
-  height: 15%;
-  background-color: green;
+  height: 20%;
+  text-align: center;
 }
 
 .titleAndDescript p {
+  padding-left: 10px;
   width: 100%;
-  height: 75%;
-  background-color: yellow;
+  height: 70%;
 }
 
 .stars {
+  padding-left: 10px;
   width: 100%;
   height: 10%;
-  background-color: blue;
+}
+
+.stars img {
+  width: 120px;
+  height: 50px;
 }
 
 .buttonAndOfert {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
-  height: 20%;
-  border: 1px solid red;
+  height: 30%;
 }
 
 .buttonAndOfert h2 {
+  padding-left: 10px;
   width: 100%;
-  height: 30%;
-  background-color: green;
+  height: 20%;
+  text-align: center;
+  font-size: 16px;
 }
 
 .buttonAndOfert button {
-  width: 100%;
-  height: 70%;
-  background-color: red;
+  width: 80%;
+  height: 50%;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #cdb4db;
+}
+
+.buttonBuy {
+  margin-bottom: 10px;
 }
