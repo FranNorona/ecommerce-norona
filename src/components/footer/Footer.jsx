@@ -9,26 +9,40 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footerImg">
-        <div>
+        <Link to="/">
           <img
             src="https://res.cloudinary.com/dmhprmqnk/image/upload/v1718284613/logoinherit_gos5nh.png"
             alt="logo"
           />
-        </div>
+        </Link>
       </div>
       <div className="footerContainer">
         <div className="titleFooter">
-          <Link className="linkFooter">Todas</Link>
-          <Link className="linkFooter">Botellas</Link>
-          <Link className="linkFooter">Vasos</Link>
+          <Link to="/" className="linkFooter">
+            Todas
+          </Link>
+          <Link to="/category/botellas" className="linkFooter">
+            Botellas
+          </Link>
+          <Link to="/category/vasos" className="linkFooter">
+            Vasos
+          </Link>
         </div>
         <div className="privacyTitle">
           <p>Privacy Policy</p>
           <div className="redesContainer">
-            <Link className="iconFooter">
+            <Link
+              to="https://www.instagram.com/"
+              target="_blank"
+              className="iconFooter"
+            >
               <FaInstagramSquare size={30} color="white" />
             </Link>
-            <Link className="iconFooter">
+            <Link
+              to="https://www.facebook.com/"
+              target="_blank"
+              className="iconFooter"
+            >
               <FaFacebookSquare size={30} color="white" />
             </Link>
           </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import CounterContainer from "../../components/counter/CounterContainer";
 import "./itemdetail.css";
 
@@ -27,7 +28,9 @@ const ItemDetail = ({ item }) => {
           <div className="buttonAndOfert">
             <h2>OFERTA VALIDA HASTA 30/07</h2>
             <CounterContainer />
-            <button className="buttonBuy">Comprar</button>
+            <Link to="/cart" className="buttonBuy">
+              <button className="buttonFont">Comprar</button>
+            </Link>
           </div>
         </div>
       </div>
