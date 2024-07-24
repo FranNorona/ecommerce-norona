@@ -1,7 +1,12 @@
+import { Link } from "react-router-dom";
+
 const Cart = () => {
   return (
-    <div style={{ minHeight: "70vh" }}>
-      <h1>Aca va a estar el carrito</h1>
+    <div>
+      <h1>Aca va ir el carrito</h1>
+      <Link to="/checkout">
+        <Button>Finalizar Compra</Button>
+      </Link>
     </div>
   );
 };

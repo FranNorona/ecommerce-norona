@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import CounterContainer from "../../components/counter/CounterContainer";
 import "./itemdetail.css";
 
-const ItemDetail = ({ item }) => {
+const ItemDetail = ({ item, onAdd }) => {
   return (
     <>
       <div className="itemDetailContainer">
@@ -29,10 +29,11 @@ const ItemDetail = ({ item }) => {
             <h2>OFERTA VALIDA HASTA 30/07</h2>
             <CounterContainer />
             <Link to="/cart" className="buttonBuy">
-              <button className="buttonFont">Comprar</button>
+              <button className="buttonFont">Agregar</button>
             </Link>
           </div>
         </div>
+        <CounterContainer onAdd={onAdd} />
       </div>
     </>
   );
