@@ -2,20 +2,26 @@ import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { products } from "../../products";
 import { CartContext } from "../../context/CartContext";
+import { db } from "../../fireBaseConfig";
+import { collection, doc, getDoc } from "firebase/firestore";
+import { toast } from "sonner";
 import ItemDetail from "./ItemDetail";
+import Swal from "sweetalert2";
 
 const ItemDetailContainer = () => {
-  const {addToCart} = useContext(CartContext);
+  const { addToCart, getQuantityById } = useContext(CartContext);
 
   const { id } = useParams();
 
   const [item, setItem] = useState({});
 
+  let initial = getQuantityById(id);
+
   useEffect(() => {
-    let product = products.find((product) => product.id === +id);
-    if (product) {
-      setItem(product);
-    }
+    let productsCollection = collection(db, "products");
+    let refDoc = doc(productsCollection, id);
+    let getProduct = getDoc(refDoc);
+    getProduct.then((res) => setItem({ ...res.data(), id: res.id }));
   }, [id]);
 
   const onAdd = (quantity) => {
@@ -23,7 +29,7 @@ const ItemDetailContainer = () => {
     addToCart(objetoFinal);
   };
 
-  return <ItemDetail item={item} onAdd={onAdd} />;
+  return <ItemDetail item={item} onAdd={onAdd} initial={initial} />;
 };
 
 export default ItemDetailContainer;

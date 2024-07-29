@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import CounterContainer from "../../components/counter/CounterContainer";
 import "./itemdetail.css";
 
-const ItemDetail = ({ item, onAdd }) => {
+const ItemDetail = ({ item, onAdd, initial }) => {
   return (
     <>
       <div className="itemDetailContainer">
@@ -33,7 +33,7 @@ const ItemDetail = ({ item, onAdd }) => {
             </Link>
           </div>
         </div>
-        <CounterContainer onAdd={onAdd} />
+        <CounterContainer onAdd={onAdd} stock={stock} initial={initial} />
       </div>
     </>
   );
