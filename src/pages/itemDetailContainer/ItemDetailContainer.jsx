@@ -27,6 +27,14 @@ const ItemDetailContainer = () => {
   const onAdd = (quantity) => {
     let objetoFinal = { ...item, quantity: quantity };
     addToCart(objetoFinal);
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Producto Agregado",
+      showConfirmButton: true,
+      timer: 1500,
+    });
+    toast.success("Producto Agregado");
   };
 
   return <ItemDetail item={item} onAdd={onAdd} initial={initial} />;
