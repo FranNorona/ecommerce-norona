@@ -33,7 +33,7 @@ const ItemDetail = ({ item, onAdd, initial }) => {
             </Link>
           </div>
         </div>
-        <CounterContainer onAdd={onAdd} stock={stock} initial={initial} />
+        <CounterContainer onAdd={onAdd} stock={item.stock} initial={initial} />
       </div>
     </>
   );

@@ -23,9 +23,7 @@ const CheckoutFormik = () => {
           /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])/,
           "Bebe tener una mayuscula..."
         ),
-      confirmar: Yup.string()
-        .required("Este campo es obligatorio")
-        .oneOf([Yup.ref("Contraseña")], "Las contraseñas no coinciden"),
+      confirmar: Yup.string(),
     }),
     validateOnChange: false,
   });
@@ -87,9 +85,7 @@ const CheckoutFormik = () => {
           name="confirmar"
         />
       )}
-      <button type="submit" variant="contained">
-        Registrar
-      </button>
+      <button type="submit">Registrar</button>
     </form>
   );
 };

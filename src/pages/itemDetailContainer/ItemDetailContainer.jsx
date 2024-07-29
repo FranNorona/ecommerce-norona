@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { products } from "../../products";
 import { CartContext } from "../../context/CartContext";
-import { db } from "../../fireBaseConfig";
+import { db } from "../../firebaseConfig";
 import { collection, doc, getDoc } from "firebase/firestore";
 import { toast } from "sonner";
 import ItemDetail from "./ItemDetail";

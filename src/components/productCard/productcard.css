@@ -77,3 +77,16 @@
   font-weight: 400;
   text-align: center;
 }
+
+.buttonDeleteCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+}
+
+.buttonDelete {
+  width: 60%;
+  height: 50px;
+}

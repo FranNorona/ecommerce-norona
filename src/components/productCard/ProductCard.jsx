@@ -8,9 +8,9 @@ export const ProductCard = ({ image, title, description, price, id }) => {
     let productColl = collection(db, "products");
     let refDoc = doc(productColl, id);
     deleteDoc(refDoc);
-  }
+  };
   return (
-    <>
+    <div>
       <Link to={`/itemDetail/${id}`} className="cardContainer">
         <img src={image} alt="" />
         <div className="cardTitle">
@@ -19,7 +19,11 @@ export const ProductCard = ({ image, title, description, price, id }) => {
           <h4>{price}</h4>
         </div>
       </Link>
-      <button onClick={eliminar}>Eliminar</button>
-    </>
+      {/* <div className="buttonDeleteCon">
+        <button onClick={eliminar} className="buttonDelete">
+          Eliminar
+        </button>
+      </div> */}
+    </div>
   );
 };
