@@ -8,7 +8,7 @@ Este proyecto es una aplicacion web desarrollada con React. El objetivo principa
 * **Consumo de Base de Datos:** Integración con una base de datos externa para obtener, eliminar, actualizar y mostrar datos en tiempo real.
 * **Carrito de Compras:** Funcionalidad para agregar, eliminar y modificar productos en el carrito de compras.
 * **Creacion de Pedidos:** Simulacion de ordenes de compra en base de datos, mediante envio de formulario.
-* * **Eliminacion y Agregado de Productos:** Botones comentados para eliminar y agregar productos a nuestra base de datos.
+* **Eliminacion y Agregado de Productos:** Botones comentados para eliminar y agregar productos a nuestra base de datos.
 
 ## CAPTURA DE PANTALLA DEL INDEX.
 
