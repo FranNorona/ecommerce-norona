@@ -29,8 +29,39 @@ const ItemListContainer = () => {
 
   if (items.length === 0) {
     return (
-      <div>
-        <Skeleton variant="rounded" width={210} height={200} />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-evenly",
+          alignItems: "center",
+          width: "100vw",
+          marginTop: "20px",
+        }}
+      >
+        <div style={{ width: "210px" }}>
+          <Skeleton variant="rounded" width={210} height={200} />
+          <Skeleton variant="text" />
+          <Skeleton variant="text" />
+          <Skeleton variant="text" />
+        </div>
+        <div style={{ width: "210px" }}>
+          <Skeleton variant="rounded" width={210} height={200} />
+          <Skeleton variant="text" />
+          <Skeleton variant="text" />
+          <Skeleton variant="text" />
+        </div>
+        <div style={{ width: "210px" }}>
+          <Skeleton variant="rounded" width={210} height={200} />
+          <Skeleton variant="text" />
+          <Skeleton variant="text" />
+          <Skeleton variant="text" />
+        </div>
+        <div style={{ width: "210px" }}>
+          <Skeleton variant="rounded" width={210} height={200} />
+          <Skeleton variant="text" />
+          <Skeleton variant="text" />
+          <Skeleton variant="text" />
+        </div>
       </div>
     );
   }

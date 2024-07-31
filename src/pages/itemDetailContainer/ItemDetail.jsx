@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import CounterContainer from "../../components/counter/CounterContainer";
 import "./itemdetail.css";
 
@@ -26,14 +25,14 @@ const ItemDetail = ({ item, onAdd, initial }) => {
             <p>{item.description}</p>
           </div>
           <div className="buttonAndOfert">
-            <h2>OFERTA VALIDA HASTA 30/07</h2>
-            <CounterContainer />
-            <Link to="/cart" className="buttonBuy">
-              <button className="buttonFont">Agregar</button>
-            </Link>
+            <h2>OFERTA VALIDA HASTA 30/12</h2>
+            <CounterContainer
+              onAdd={onAdd}
+              stock={item.stock}
+              initial={initial}
+            />
           </div>
         </div>
-        <CounterContainer onAdd={onAdd} stock={item.stock} initial={initial} />
       </div>
     </>
   );

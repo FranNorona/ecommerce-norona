@@ -123,17 +123,3 @@
   cursor: pointer;
   background-color: #cdb4db;
 }
-
-.buttonBuy {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 70%;
-  margin-bottom: 10px;
-  text-decoration: none;
-}
-
-.buttonFont {
-  font-size: 20px;
-}

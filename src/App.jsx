@@ -6,7 +6,6 @@ import Cart from "./pages/cart/Cart.jsx";
 import Layout from "./components/layout/Layout.jsx";
 import Checkout from "./pages/checkout/Checkout";
 import CartContextProvider from "./context/CartContext.jsx";
-import CheckoutFormik from "./pages/checkoutFormik/CheckoutFormik.jsx";
 
 function App() {
   return (
