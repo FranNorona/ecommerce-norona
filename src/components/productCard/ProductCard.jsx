@@ -16,7 +16,7 @@ export const ProductCard = ({ image, title, description, price, id }) => {
         <div className="cardTitle">
           <h2>{title}</h2>
           <h3>{description}</h3>
-          <h4>{price}</h4>
+          <h4>${price}</h4>
         </div>
       </Link>
       {/* <div className="buttonDeleteCon">

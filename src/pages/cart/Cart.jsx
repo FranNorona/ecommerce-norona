@@ -41,7 +41,7 @@ const Cart = () => {
         );
       })}
       <h2 className={cart.length > 0 ? "title" : "ocultar"}>
-        El total a pagar es {total}
+        El total a pagar es ${total}
       </h2>
       {cart.length > 0 && <button onClick={clearCart}>Limpiar carrito </button>}
 
