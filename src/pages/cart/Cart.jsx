@@ -28,34 +28,37 @@ const Cart = () => {
 
   return (
     <div className="cartContainer">
-      <div className="productContainer">
-        {cart.map((elemento) => {
-          return (
-            <div className="productReturn" key={elemento.id}>
-              <div className="elementoTitle">
-                <h2>{elemento.title}</h2>
-                <h2>Cantidad: {elemento.quantity}</h2>
-                <h2>Precio:{elemento.price}</h2>
+      <div className="cartContainer">
+        {cart.length > 0 ? (
+          <div className="productContainer">
+            {cart.map((elemento) => (
+              <div className="productReturn" key={elemento.id}>
+                <div className="elementoTitle">
+                  <h2>{elemento.title}</h2>
+                  <h2>Cantidad: {elemento.quantity}</h2>
+                  <h2>Precio: {elemento.price}</h2>
+                </div>
+                <img src={elemento.img} alt="imagenproducto" />
+                <button
+                  className="buttonDelete"
+                  onClick={() => handleDelete(elemento.id)}
+                >
+                  Eliminar
+                </button>
               </div>
-              <img src={elemento.img} alt="imagenproducto" />
-              <button
-                className="buttonDelete"
-                onClick={() => handleDelete(elemento.id)}
-              >
-                Eliminar
-              </button>
-            </div>
-          );
-        })}
+            ))}
+          </div>
+        ) : (
+          <h2>El Carrito esta vacio</h2>
+        )}
       </div>
+
       <div className="conContainer">
         <div>
           <div>
             {cart.length > 0 ? (
               <h2 className="title">El total a pagar es ${total}</h2>
-            ) : (
-              <h2 className="ocultar">El carrito está vacío</h2>
-            )}
+            ) : null}
           </div>
         </div>
         <div className="buttonsConContainer">

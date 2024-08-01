@@ -6,6 +6,7 @@ import { CartContext } from "../../context/CartContext";
 import { toast } from "sonner";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import "./checkout.css";
 
 // Validación del esquema con Yup
 const validationSchema = Yup.object({
@@ -52,8 +53,7 @@ const Checkout = () => {
   };
 
   return (
-    <div>
-      <h1>Aca va el formulario</h1>
+    <div className="formContainer">
       {orderId ? (
         <h2>Gracias por tu compra, tu ticket es: {orderId}</h2>
       ) : (
@@ -67,10 +67,11 @@ const Checkout = () => {
           onSubmit={sendForm}
         >
           {({ isSubmitting }) => (
-            <Form>
-              <div>
-                <label htmlFor="nombre">Nombre:</label>
+            <Form className="formNameContainer">
+              <div className="formTitles">
+                <label htmlFor="nombre">Nombre</label>
                 <Field
+                  className="formInputs"
                   type="text"
                   id="nombre"
                   name="nombre"
@@ -78,9 +79,10 @@ const Checkout = () => {
                 />
                 <ErrorMessage name="nombre" component="div" />
               </div>
-              <div>
-                <label htmlFor="email">Email:</label>
+              <div className="formTitles">
+                <label htmlFor="email">Email</label>
                 <Field
+                  className="formInputs"
                   type="text"
                   id="email"
                   name="email"
@@ -88,9 +90,10 @@ const Checkout = () => {
                 />
                 <ErrorMessage name="email" component="div" />
               </div>
-              <div>
-                <label htmlFor="telefono">Teléfono:</label>
+              <div className="formTitles">
+                <label htmlFor="telefono">Teléfono</label>
                 <Field
+                  className="formInputs"
                   type="text"
                   id="telefono"
                   name="telefono"

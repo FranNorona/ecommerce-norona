@@ -6,6 +6,7 @@ import Cart from "./pages/cart/Cart.jsx";
 import Layout from "./components/layout/Layout.jsx";
 import Checkout from "./pages/checkout/Checkout";
 import CartContextProvider from "./context/CartContext.jsx";
+import NotFound from "./components/notFound/NotFound.jsx";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
             <Route path="/checkout" element={<Checkout />} />
           </Route>
 
-          <Route path="*" element={<h1>404 Not found</h1>} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </CartContextProvider>
     </BrowserRouter>
