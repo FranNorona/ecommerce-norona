@@ -33,9 +33,10 @@ const ItemListContainer = () => {
         style={{
           display: "flex",
           justifyContent: "space-evenly",
-          alignItems: "center",
-          width: "100vw",
+          alignItems: "flex-start",
+          width: "100%",
           marginTop: "20px",
+          minHeight: "68vh",
         }}
       >
         <div style={{ width: "210px" }}>

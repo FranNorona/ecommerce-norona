@@ -1,0 +1,88 @@
+.cartContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  min-height: 70vh;
+}
+
+.productContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  width: 80%;
+  height: 50%;
+  border-top: 2px solid #ffafcc;
+  border-right: 2px solid #ffafcc;
+  border-bottom: 2px solid #ffafcc;
+  border-left: 2px solid #ffafcc;
+}
+
+.productReturn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  border-top: 2px solid #cdb4db;
+  border-right: 2px solid #cdb4db;
+  border-bottom: 2px solid #cdb4db;
+  border-left: 2px solid #cdb4db;
+  background-color: #f9f1fd;
+  overflow: hidden;
+}
+
+.elementoTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  order: 2;
+}
+
+.productReturn img {
+  width: 200px;
+  height: 200px;
+  order: 1;
+  object-fit: contain;
+  box-shadow: 0px 0px 5px 1px rgba(94, 89, 89, 0.9);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(94, 89, 89, 0.9);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(94, 89, 89, 0.9);
+}
+
+.buttonDelete {
+  width: 200px;
+  order: 3;
+  font-size: 20px;
+  background-color: #cdb4db;
+}
+
+.conContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  height: 120px;
+}
+
+.buttonsConContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+  height: 50px;
+}
+
+.buttonsStyle {
+  width: 150px;
+  height: 50px;
+  background-color: #cdb4db;
+}
