@@ -8,7 +8,6 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import "./checkout.css";
 
-// Validación del esquema con Yup
 const validationSchema = Yup.object({
   nombre: Yup.string().min(5, "Minimo 5 caracteres").required("Requerido"),
   email: Yup.string().email("Email inválido").required("Requerido"),
@@ -33,13 +32,11 @@ const Checkout = () => {
       let ordersCollection = collection(db, "orders");
       let productCollection = collection(db, "products");
 
-      // Actualizar el stock de productos
       cart.forEach(async (elemento) => {
         let refDoc = doc(productCollection, elemento.id);
         await updateDoc(refDoc, { stock: elemento.stock - elemento.quantity });
       });
 
-      // Agregar el pedido a la colección
       const res = await addDoc(ordersCollection, order);
       setOrderId(res.id);
       toast.success(`Gracias por tu compra, tu ticket es ${res.id}`);
