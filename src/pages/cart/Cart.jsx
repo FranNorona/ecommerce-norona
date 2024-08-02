@@ -36,7 +36,7 @@ const Cart = () => {
                 <div className="elementoTitle">
                   <h2>{elemento.title}</h2>
                   <h2>Cantidad: {elemento.quantity}</h2>
-                  <h2>Precio: {elemento.price}</h2>
+                  <h2>Precio: ${elemento.price}</h2>
                 </div>
                 <img src={elemento.img} alt="imagenproducto" />
                 <button
